@@ -8,9 +8,9 @@ import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-
-import "./sidebar.css";
 import SideOption from "./SideOption";
+import { Button } from "@material-ui/core";
+import "./sidebar.css";
 
 interface Props {}
 
@@ -30,7 +30,9 @@ const Sidebar = (props: Props) => {
       <SideOption active={false} text="Lists" Icon={ListAltIcon} />
       <SideOption active={false} text="Profile" Icon={PermIdentityIcon} />
       <SideOption active={false} text="More" Icon={MoreHorizIcon} />
-      {/* tweet  */}
+      <Button variant="outlined" className="sidebar__tweet" fullWidth>
+        Tweet
+      </Button>
     </div>
   );
 };
