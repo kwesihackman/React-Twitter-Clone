@@ -18,14 +18,18 @@ const Sidebar = (props: Props) => {
   return (
     <div>
       <TwitterIcon />
-      <SideOption text="Home" Icon={HomeIcon} />
-      <SideOption text="Explore" Icon={SearchIcon} />
-      <SideOption text="Notifications" Icon={NotificationsNoneIcon} />
-      <SideOption text="Messages" Icon={MailOutlineIcon} />
-      <SideOption text="Bookmarks" Icon={BookmarkBorderIcon} />
-      <SideOption text="Lists" Icon={ListAltIcon} />
-      <SideOption text="Profile" Icon={PermIdentityIcon} />
-      <SideOption text="More" Icon={MoreHorizIcon} />
+      <SideOption active={true} text="Home" Icon={HomeIcon} />
+      <SideOption active={false} text="Explore" Icon={SearchIcon} />
+      <SideOption
+        active={false}
+        text="Notifications"
+        Icon={NotificationsNoneIcon}
+      />
+      <SideOption active={false} text="Messages" Icon={MailOutlineIcon} />
+      <SideOption active={false} text="Bookmarks" Icon={BookmarkBorderIcon} />
+      <SideOption active={false} text="Lists" Icon={ListAltIcon} />
+      <SideOption active={false} text="Profile" Icon={PermIdentityIcon} />
+      <SideOption active={false} text="More" Icon={MoreHorizIcon} />
       {/* tweet  */}
     </div>
   );
