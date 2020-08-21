@@ -16,8 +16,8 @@ interface Props {}
 
 const Sidebar = (props: Props) => {
   return (
-    <div>
-      <TwitterIcon />
+    <div className="sidebar">
+      <TwitterIcon className="sidebar__twitter_icon" />
       <SideOption active={true} text="Home" Icon={HomeIcon} />
       <SideOption active={false} text="Explore" Icon={SearchIcon} />
       <SideOption
