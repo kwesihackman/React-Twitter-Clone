@@ -38,6 +38,7 @@
 
 .tweetBox_icons > * {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .tweetBox__button {

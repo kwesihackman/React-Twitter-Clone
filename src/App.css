@@ -3,6 +3,8 @@ body {
   --twitter-color: #50b7f5;
   --twitter-background: #15202b;
   --twitter-light-gray: #f5f8fa;
+  --twitter-border: rgba(255, 255, 255, 0.1);
+  --twitter-footnote: rgb(136, 153, 166);
   background-color: var(--twitter-background);
   color: white;
 }
