@@ -13,6 +13,7 @@
   z-index: 99;
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 15px 20px;
+  background-color: var(--twitter-background);
 }
 
 .feed::-webkit-scrollbar {
