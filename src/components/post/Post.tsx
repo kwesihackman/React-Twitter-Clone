@@ -52,9 +52,7 @@ const Post: React.FC<Props> = ({
             )}
             <span className="post_headerUsername">{username}</span>
           </div>
-          <div className="post__headerDescription">
-            BUilding twitter clone awesome
-          </div>
+          <div className="post__headerDescription">{text}</div>
         </div>
         <div className="post__image">
           {image && <img src={image} alt={displayName} />}
