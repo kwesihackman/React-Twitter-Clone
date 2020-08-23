@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Icon from "@mdi/react";
 import "./post.css";
 import { Avatar } from "@material-ui/core";
@@ -85,5 +85,4 @@ const Post: React.FC<Props> = ({
     </div>
   );
 };
-
 export default Post;

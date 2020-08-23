@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import FlipMove from "react-flip-move";
 import "./feed.css";
 import Tweetbox from "../tweetbox/Tweetbox";
 import Post from "../post/Post";
@@ -29,8 +30,9 @@ export const Feed = () => {
         <h2>Home</h2>
       </div>
       <Tweetbox />
-      {posts.map((post: Posts) => (
+      {posts.map((post: any) => (
         <Post
+          key={post.text}
           avatar={post.avatar}
           displayName={post.displayName}
           username={`@${post.username}`}

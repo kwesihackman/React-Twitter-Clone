@@ -1,0 +1,33 @@
+.trends {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  border-top: 1px solid var(--twitter-border);
+  cursor: pointer;
+}
+.trends:hover {
+  background-color: var(--twitter-background);
+}
+.trends__header {
+  display: flex;
+  flex-direction: row;
+}
+.trends__header > div {
+  color: var(--twitter-footnote);
+  font-size: 12px;
+  padding-right: 4px;
+}
+
+.trends__body div {
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  margin-top: 8px;
+}
+
+.trends__footer div {
+  color: var(--twitter-footnote);
+  font-size: 12px;
+  padding-right: 4px;
+  margin-top: 12px;
+}
